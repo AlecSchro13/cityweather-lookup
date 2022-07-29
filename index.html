@@ -13,16 +13,61 @@
     <div class="citySearch"></div>
     <section class="container">
         <h2 id="searchHere">Search Here</h2>
-        <form action="Search">
+        <div action="Search">
             <input type="search" id="cityLookup" name="c"
             placeholder="Search a City..">
             <button id="searchBtn">Search</button>
-        </form>
+        </div>
         <ol id="recentCities"></ol>
     </section>
-    <section class="weather">
-        <h2 id="todaysWeather">Today's weather in "".</h2>
+    <section id="weather">
+        <h2 id="currentCity">Today's weather in "".</h2>
+        <p id="currentTemp"></p>
+        <p id="currentWind"></p>
+        <p id="currentUV"></p>
+        <p id="currentHumidity"></p>
     </section>
-  <link rel="stylesheet" href="assets/js/script.js">  
+    <section id="forecast">
+     <div id="day1-div">  
+        <p id="city"></p>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="UV"></p>
+        <p id="humidity"></p>
+     </div>
+     <div id="day2-div">  
+        <p id="city"></p>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="UV"></p>
+        <p id="humidity"></p>
+     </div>
+     <div id="day3-div">  
+        <p id="city"></p>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="UV"></p>
+        <p id="humidity"></p>
+     </div>
+     <div id="day4-div">  
+        <p id="city"></p>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="UV"></p>
+        <p id="humidity"></p>
+     </div>
+     <div id="day5-div">  
+        <p id="city"></p>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="UV"></p>
+        <p id="humidity"></p>
+     </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+ 
 </body>
 </html>
