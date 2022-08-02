@@ -38,4 +38,33 @@ function getLocation(searchCities) {
 
 };
 
+function getWeatherLocation(lat, lon) {
+    var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly,alerts&units=imperial&appid=" + apiKey;
+    fetch(apiUrl).then(function(response){
+        if (response.ok){
+            response.json().then(function(data){
+            console.log(data);
+            var todaysCity = $("#currentCity");
+            todaysCity.text(cityName);
+            var todaysTemp = $("#currentTemp");
+            todaysTemp.text(data.current.temp);
+            var todaysWind = $("#currentWind");
+            todaysWind.text(data.current.wind_speed);
+            var todaysUV = $("#currentUV");
+            todaysUV.text(data.current.uvi);
+            var todaysHumidity = $("#currentHumidity");
+            todaysHumidity.text(data.current.humidity)
+
+            for(var i = 0; i < forecastDiv.length; i++) {
+                forecastDiv[i].find("#temp").text(data.daily[i + 1].temp.day)
+                forecastDiv[i].find("#wind").text(data.daily[i + 1].wind_speed)
+                forecastDiv[i].find("#UV").text(data.daily[i + 1].uvi)
+                forecastDiv[i].find("#humidity").text(data.daily[i + 1].humidity)
+            }
+            });
+        }
+    });
+
+};
+
 

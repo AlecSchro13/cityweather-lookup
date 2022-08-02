@@ -18,50 +18,47 @@
             placeholder="Search a City..">
             <button id="searchBtn">Search</button>
         </div>
-        <ol id="recentCities"></ol>
     </section>
-    <section id="weather">
-        <h2 id="currentCity">Today's weather in "".</h2>
-        <p id="currentTemp"></p>
-        <p id="currentWind"></p>
-        <p id="currentUV"></p>
-        <p id="currentHumidity"></p>
+    <div class="recentCities">
+        <ol id="recentCities"></ol>
+    </div>
+    <section id="weather" class="todaysWeather">
+        <h2 id="currentCity" class="currentCity"></h2>
+        <p>Today's temperature:<span id="currentTemp"></span></p>
+        <p>Today's wind speed:<span id="currentWind"></span></p>
+        <p>Today's UV index:<span id="currentUV"></span></p>
+        <p>Today's humidity:<span id="currentHumidity"></span></p>
     </section>
     <section id="forecast">
-     <div id="day1-div">  
-        <p id="city"></p>
-        <p id="temp"></p>
-        <p id="wind"></p>
-        <p id="UV"></p>
-        <p id="humidity"></p>
+     <div id="day1-div" class="dailyForecast">  
+        <p>Temp:<span id="temp"></span></p>
+        <p>Wind Speed:<span id="wind"></span></p>
+        <p>UV Index:<span id="UV"></span></p>
+        <p>Humidity<span id="humidity"></span></p>
      </div>
-     <div id="day2-div">  
-        <p id="city"></p>
-        <p id="temp"></p>
-        <p id="wind"></p>
-        <p id="UV"></p>
-        <p id="humidity"></p>
+     <div id="day2-div" class="dailyForecast">
+        <p>Temp:<span id="temp"></span></p>
+        <p>Wind Speed:<span id="wind"></span></p>
+        <p>UV Index:<span id="UV"></span></p>
+        <p>Humidity<span id="humidity"></span></p>
+    </div>
+     <div id="day3-div" class="dailyForecast">  
+        <p>Temp:<span id="temp"></span></p>
+        <p>Wind Speed:<span id="wind"></span></p>
+        <p>UV Index:<span id="UV"></span></p>
+        <p>Humidity<span id="humidity"></span></p>    
      </div>
-     <div id="day3-div">  
-        <p id="city"></p>
-        <p id="temp"></p>
-        <p id="wind"></p>
-        <p id="UV"></p>
-        <p id="humidity"></p>
-     </div>
-     <div id="day4-div">  
-        <p id="city"></p>
-        <p id="temp"></p>
-        <p id="wind"></p>
-        <p id="UV"></p>
-        <p id="humidity"></p>
-     </div>
-     <div id="day5-div">  
-        <p id="city"></p>
-        <p id="temp"></p>
-        <p id="wind"></p>
-        <p id="UV"></p>
-        <p id="humidity"></p>
+     <div id="day4-div" class="dailyForecast">  
+        <p>Temp:<span id="temp"></span></p>
+        <p>Wind Speed:<span id="wind"></span></p>
+        <p>UV Index:<span id="UV"></span></p>
+        <p>Humidity<span id="humidity"></span></p>
+    </div>
+     <div id="day5-div" class="dailyForecast">  
+        <p>Temp:<span id="temp"></span></p>
+        <p>Wind Speed:<span id="wind"></span></p>
+        <p>UV Index:<span id="UV"></span></p>
+        <p>Humidity<span id="humidity"></span></p>
      </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

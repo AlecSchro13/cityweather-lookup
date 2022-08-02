@@ -1,9 +1,11 @@
 * {
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: azure;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 5%, rgba(201,234,250,1) 100%);
 }
 
 header {
@@ -18,8 +20,11 @@ header {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     margin: 25px;
     padding: 25px;
+    background-color: white;
     color: black;
 }
 
@@ -27,8 +32,31 @@ h2 {
     margin-bottom: 10px;
 }
 
-#todaysWeather {
-    text-align: right;
+.todaysWeather {
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    margin-left: 750px;
+    padding: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+#forecast {
+    display: flex;
+    width: 800px;
+    margin-left: 750px;
+    background-color: black;
+    color: black;
+}
+
+.dailyForecast {
+    background-color: blanchedalmond;
     margin: 25px;
     padding: 25px;
+    border: solid 2px hotpink;
+    border-radius: 10px;
 }
