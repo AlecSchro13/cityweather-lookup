@@ -15,17 +15,32 @@ header {
     color: black;
     font-size: xx-large;
     font-weight: bolder;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 5%, rgba(201,234,250,1) 100%);
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    font-size: xx-large;
+    font-weight: bolder;
     margin: 25px;
     padding: 25px;
-    background-color: white;
-    color: black;
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+button {
+    font-size: large;
+    border-radius: 10px;
+    border: solid 1px navy;
+    background-color: navy;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: maroon;
+    cursor: pointer;
 }
 
 h2 {
@@ -33,30 +48,31 @@ h2 {
 }
 
 .todaysWeather {
-    text-align: center;
+    text-align: left;
+    font-size: xx-large;
     width: 800px;
     height: 400px;
-    margin-left: 750px;
+    margin-left: 450px;
     padding: 25px;
-    background-color: white;
     color: black;
+    border: solid 2px royalblue;
     border-radius: 15px;
     border-bottom-left-radius: 45px;
     border-top-right-radius: 45px;
 }
 
 #forecast {
-    display: flex;
+    display: inline-flex;
+    justify-content: space-evenly;
     width: 800px;
-    margin-left: 750px;
-    background-color: black;
+    margin-left: 450px;
+    margin-top: 50px;
     color: black;
 }
 
 .dailyForecast {
-    background-color: blanchedalmond;
-    margin: 25px;
-    padding: 25px;
-    border: solid 2px hotpink;
+    margin: 10px; 
+    padding: 30px;
+    border: solid 2px royalblue;
     border-radius: 10px;
 }
