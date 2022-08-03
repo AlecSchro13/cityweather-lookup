@@ -13,7 +13,7 @@ header {
     padding-bottom: 10px;
     text-align: center;
     color: black;
-    font-size: xx-large;
+    font-size: 100px;
     font-weight: bolder;
     color: aliceblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -30,7 +30,7 @@ header {
     color: aliceblue;
 }
 
-button {
+.searchBtn {
     font-size: large;
     border-radius: 10px;
     border: solid 1px navy;
@@ -38,7 +38,7 @@ button {
     color: aliceblue;
 }
 
-button:hover {
+.searchBtn:hover {
     background-color: maroon;
     cursor: pointer;
 }
@@ -48,12 +48,11 @@ h2 {
 }
 
 .todaysWeather {
-    text-align: left;
     font-size: xx-large;
-    width: 800px;
+    width: 750px;
     height: 400px;
-    margin-left: 450px;
-    padding: 25px;
+    margin-bottom: 50px;
+    padding: 75px;
     color: black;
     border: solid 2px royalblue;
     border-radius: 15px;
@@ -62,17 +61,36 @@ h2 {
 }
 
 #forecast {
-    display: inline-flex;
+    display: flex;
     justify-content: space-evenly;
-    width: 800px;
-    margin-left: 450px;
-    margin-top: 50px;
-    color: black;
+    color: aliceblue;
 }
 
 .dailyForecast {
-    margin: 10px; 
-    padding: 30px;
+    display: block;
+    font-size: large;
+    font-weight: 100;
+    font-style: italic;
+    margin: 10px;
+    padding: 50px;
     border: solid 2px royalblue;
     border-radius: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+button {
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 900;
+    margin: 5px auto;
+}
+
+button:hover {
+    background-color: royalblue;
+    color: aliceblue;
+    cursor: pointer;
 }

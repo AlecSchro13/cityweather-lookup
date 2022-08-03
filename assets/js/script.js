@@ -4,12 +4,22 @@ var searchCities = "";
 var apiKey = "d899707429dae12637678613a5874634";
 var cityName = "";
 var forecastDiv = [$("#day1-div"), $("#day2-div"), $("#day3-div"), $("#day4-div"), $("#day5-div")];
+var previousCities = JSON.parse(localStorage.getItem("savedCities")) || []
 
+for(let i = 0; i < previousCities.length; i++) {
+    console.log(previousCities[i]);
+    var recentSearch = document.getElementById("recentCities");
+    //targetting ol
+    var recentList = document.createElement("li");
+    var recentBtn = document.createElement("button");
+    recentBtn.textContent = previousCities[i];
+    recentList.append(recentBtn);
+    recentSearch.append(recentList);
+}; 
 
 submitBtn.click(function() {
     console.log("");
     searchCities = $("#cityLookup").val().trim();
-    var previousCities = JSON.parse(localStorage.getItem("savedCities")) || []
     previousCities.push(searchCities)
     localStorage.setItem("savedCities", JSON.stringify(previousCities))
     getLocation(searchCities)
@@ -66,5 +76,7 @@ function getWeatherLocation(lat, lon) {
     });
 
 };
+
+
 
 

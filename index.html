@@ -9,14 +9,14 @@
 
 </head>
 <body>
-    <header>Weather in Your Local Area</header>
+    <header>Weather in Your Area</header>
     <div class="citySearch"></div>
     <section class="container">
         <h2 id="searchHere">Search A City Here</h2>
         <div action="Search">
             <input type="search" id="cityLookup" name="c"
             placeholder="Search a City..">
-            <button id="searchBtn">Search</button>
+            <button id="searchBtn" class="searchBtn">Search</button>
         </div>
     </section>
     <div class="recentCities">
@@ -24,10 +24,10 @@
     </div>
     <section id="weather" class="todaysWeather">
         <h2 id="currentCity" class="currentCity"></h2>
-        <p>Today's temperature:<span id="currentTemp"></span></p>
-        <p>Today's wind speed:<span id="currentWind"></span></p>
-        <p>Today's UV index:<span id="currentUV"></span></p>
-        <p>Today's humidity:<span id="currentHumidity"></span></p>
+        <p>Today's temperature: <span id="currentTemp"></span> degrees Fahrenheit</p>
+        <p>Today's wind speed: <span id="currentWind"></span> mph</p>
+        <p>Today's UV index: <span id="currentUV"></span></p>
+        <p>Today's humidity: <span id="currentHumidity"></span>%</p>
     </section>
     <section id="forecast">
      <div id="day1-div" class="dailyForecast">
@@ -38,28 +38,28 @@
         <p>Humidity: <span id="humidity"></span></p>
      </div>
      <div id="day2-div" class="dailyForecast">
-        <h4>Two Days Ahead</h4>
+        <h4>Day Two</h4>
         <p>Temp: <span id="temp"></span></p>
         <p>Wind Speed: <span id="wind"></span></p>
         <p>UV Index: <span id="UV"></span></p>
         <p>Humidity: <span id="humidity"></span></p>
     </div>
      <div id="day3-div" class="dailyForecast"> 
-        <h4>Three Days Ahead</h4> 
+        <h4>Day Three</h4> 
         <p>Temp: <span id="temp"></span></p>
         <p>Wind Speed: <span id="wind"></span></p>
         <p>UV Index: <span id="UV"></span></p>
         <p>Humidity: <span id="humidity"></span></p>    
      </div>
      <div id="day4-div" class="dailyForecast"> 
-        <h4>Four Days Ahead</h4> 
+        <h4>Day Four</h4> 
         <p>Temp: <span id="temp"></span></p>
         <p>Wind Speed: <span id="wind"></span></p>
         <p>UV Index: <span id="UV"></span></p>
         <p>Humidity: <span id="humidity"></span></p>
     </div>
      <div id="day5-div" class="dailyForecast">
-        <h4>Five Days Ahead</h4>  
+        <h4>Day Five</h4>  
         <p>Temp: <span id="temp"></span></p>
         <p>Wind Speed: <span id="wind"></span></p>
         <p>UV Index: <span id="UV"></span></p>
