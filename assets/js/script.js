@@ -66,6 +66,7 @@ function getWeatherLocation(lat, lon) {
             todaysHumidity.text(data.current.humidity)
 
             for(var i = 0; i < forecastDiv.length; i++) {
+                forecastDiv[i].find(".day").text(data.daily[i + 1].dt)
                 forecastDiv[i].find("#temp").text(data.daily[i + 1].temp.day)
                 forecastDiv[i].find("#wind").text(data.daily[i + 1].wind_speed)
                 forecastDiv[i].find("#UV").text(data.daily[i + 1].uvi)
